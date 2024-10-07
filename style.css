@@ -1,0 +1,148 @@
+body{
+    background: radial-gradient(circle,#24246e,#06051f);
+    color: white;
+    font-size: 50px;
+
+}
+.wrapper span{
+    position: fixed;
+    top: -120px;
+    height: 50px;
+    width: 50px;
+    z-index: -1;
+    animation: animate 10s linear infinite;    
+}
+.wrapper .wrapper1{
+    left: 60px;
+    animation-delay:0.6s;
+    border: 5px solid cyan;
+}
+.wrapper .wrapper2{
+    left: 60%;
+    animation-delay: 3s;
+    width: 60px;
+    height: 60px;
+    background: #ff4293;
+}
+.wrapper .wrapper3{
+    left: 20%;
+    animation-delay: 2s;
+    border: 5px solid #fff;    
+}
+.wrapper .wrapper4{
+    left: 30%;
+    animation-delay: 5s;
+    width: 80px;
+    height: 80px;
+    background: #befb46;
+}
+.wrapper .wrapper5{
+    left: 40%;
+    animation-delay: 1s;
+    border: 5px solid #ff4293;
+}
+.wrapper .wrapper6{
+    left: 50%;
+    animation-delay: 7s;
+    border: 5px solid deepskyblue;
+}
+.wrapper .wrapper7{
+    left: 60%;
+    animation-delay: 6s;
+    width: 100px;
+    height: 100px;
+    background: #ffd59e;
+}
+.wrapper .wrapper8{
+    left: 70%;
+    animation-delay: 8s;
+    border: 5px solid #befb46;
+}
+.wrapper .wrapper9{
+    left: 80%;
+    animation-delay: 6s;
+    width: 90px;
+    height: 90px;
+    background: cyan;
+}
+.wrapper .wrapper10{
+    left: 90%;
+    animation-delay: 4s;
+    border: 5px solid #fff;    
+}
+.content h2{
+	margin-top: 40px;
+	font-family: "Kay Pho Du", serif;
+	font-weight:bolder;
+	font-size: 50px;
+    cursor: pointer;
+}
+.content h2:hover{
+    color: #ff4293 !important;
+    font-style: italic;
+}
+h5{
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 40px;
+   font-weight:900;
+
+}
+ h5:hover{
+    font-size: 50px;
+    font-style: italic;
+    cursor: pointer;
+    color:rgb(238, 78, 78);
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateY(800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media (min-width: 901px) {
+    body {
+        font-size: 50px; 
+    }
+    .wrapper span {
+        height: 50px;
+        width: 50px; 
+    }
+    .content h2 {
+        font-size: 50px; 
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        font-size: 40px; 
+    }
+    .wrapper span {
+        height: 40px;
+        width: 40px; 
+    }
+    .content h2 {
+        font-size: 40px; 
+    }
+}
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 30px; 
+    }
+    .wrapper span {
+        height: 30px;
+        width: 30px; 
+    }
+    .content h2 {
+        font-size: 30px; 
+    }
+}
